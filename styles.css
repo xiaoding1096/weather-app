@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top,rgba(0,0,0,0.8), rgba(0, 0, 0,0.7)), url(./images/warm.png) no-repeat center/cover;
+    font-size: 62.5%;
+}
+
+#weather {
+    width: 350px;
+    border-radius: 10px;
+    padding: 30px 20px;
+    background: linear-gradient(to top,rgba(0,0,0,0.5), rgba(0, 0, 0,0.2)),url(./images/warm.png) no-repeat center/cover;
+
+}
+
+.cold {
+    background: linear-gradient(to top,rgba(0,0,0,0.9), rgba(0, 0, 0,0.2)),url(./images/cold.png) no-repeat center/cover;
+}
+
+.cold #weather {
+    background: linear-gradient(to top,rgba(0,0,0,0.5), rgba(0, 0, 0,0.2)),url(./images/cold.png) no-repeat center/cover;
+}
+
+.warm {
+    background: linear-gradient(to top,rgba(0,0,0,0.9), rgba(0, 0, 0,0.2)),url(./images/warm.png) no-repeat center/cover;
+}
+
+.warm #weather {
+    background: linear-gradient(to top,rgba(0,0,0,0.5), rgba(0, 0, 0,0.2)),url(./images/warm.png) no-repeat center/cover;
+}
+
+.search {
+    width: 100%;
+    padding: 12px 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.2);
+    border-radius:  0 15px 0 15px;
+    transition: 0.25s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0,0.1);
+}
+
+.search:hover {
+    background: rgba(255,255,255,0.7);
+    border-radius: 15px 0 15px 0;
+}
+
+.content {
+    text-align: center;
+    color: #fff;
+    margin: 30px 0 25px;
+    transition: 0.25s;
+}
+
+.content .capital {
+    font-size: 2rem;
+    text-shadow: 2px 2px rgba(0,0,0,0.2);
+}
+
+.time {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.temperature {
+    font-size:4rem;
+    text-shadow: 4px 4px rgba(0,0,0,0.4);
+    padding: 15px;
+    background: rgba(255, 255, 255,0.3);
+    box-shadow: 4px 4px rgba(0, 0, 0,0.4);
+    border-radius: 10px;
+    margin: 0 30px;
+}
+.short-desc {
+    font-size: 2rem;
+    margin-top: 15px;
+    text-shadow: 2px 2px rgba(0,0,0,0.4);
+}
+
+.more-desc {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.more-desc div {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.more-desc i span {
+    font-size: 1rem;
+}
+
+.more-desc span {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+
