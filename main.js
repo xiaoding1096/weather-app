@@ -17,7 +17,7 @@ async function changeWeatherUI() {
 
   content.classList.remove(".hide");
   city.innerText = data.resolvedAddress;
-  let temp = Math.round((data.currentConditions.temp - 32) / 1.8);
+  let temp123 = Math.round((data.currentConditions.temp - 32) / 1.8);
   celsius.innerText = temp;
   conditions.innerText = data.currentConditions.conditions;
   visibility.innerText = data.currentConditions.visibility + " Km";
